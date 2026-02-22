@@ -135,10 +135,10 @@
             margin-bottom: 60px;
         }
 
-        /* Mřížka služeb - nyní jen 2 sloupce */
+        /* Mřížka služeb - 3 sloupce pro desktop */
         .services-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
             gap: 40px;
         }
 
@@ -147,8 +147,10 @@
             /* Jemný rámeček a zaoblení */
             border: 1px solid #e0e7f1;
             border-radius: var(--border-radius);
-            padding: 50px;
+            padding: 40px;
             transition: all 0.3s ease;
+            display: flex;
+            flex-direction: column;
         }
 
         .service-card:hover {
@@ -159,10 +161,14 @@
         }
 
         .service-card h3 {
-            font-size: 1.5rem;
+            font-size: 1.4rem;
             font-weight: 700;
             color: var(--primary-color);
-            margin-bottom: 20px;
+            margin-bottom: 15px;
+        }
+
+        .service-card p {
+            font-size: 1rem;
         }
 
         /* Sekce O nás - s odlišným pozadím */
@@ -249,7 +255,11 @@
             <div class="services-grid">
                 <div class="service-card">
                     <h3>IT a AI poradenství</h3>
-                    <p>Poskytujeme odborné poradenství v oblasti informačních technologií. Specializujeme se na analýzu a implementaci nástrojů umělé inteligence (AI) pro optimalizaci firemních procesů, dodáváme software na míru a zajišťujeme hostingové služby.</p>
+                    <p>Poskytujeme odborné poradenství v oblasti informačních technologií. Specializujeme se na analýzu a implementaci nástrojů umělé inteligence (AI) pro optimalizaci firemních procesů a dodáváme software na míru.</p>
+                </div>
+                <div class="service-card">
+                    <h3>Zpracování mezd pro školy</h3>
+                    <p>Specializujeme se na komplexní vedení mzdové agendy pro vzdělávací instituce. Výborně se orientujeme ve specifikách odměňování ve školství, včetně platových tabulek, osobních příplatků a dotačních titulů. Garantujeme naprostou přesnost, včasnost a diskrétnost.</p>
                 </div>
                 <div class="service-card">
                     <h3>Ubytovací služby</h3>
